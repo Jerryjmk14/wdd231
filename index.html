@@ -3,10 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD231-Egwa Jeremiah</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="Course Home page for WDD230 - Web Frontend Development 1.">
+    <meta name="author" content="Egwa Jeremiah">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>WDD231 BYU</h1>
-    
+    <header>
+        <div class="top-nav">
+            <div class="logo"><img src="images/profile.jpg" alt="logo">
+            <span>Egwa Jeremiah</span></div>
+            <a href="#" id="menu"></a>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Chamber</a>
+        <a href="#">Final</a>
+        <a href="#">Github Profile</a>
+        <a href="#">LinkedIn</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section class="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="location">
+            <h2>Nasarawa, Nigeria</h2>
+            <figure>
+                <img src="images/farin-ruwa-falls.webp" loading="lazy" alt="farin-ruwa-falls-Nigeria">
+                <figcaption>Farin Ruwa Falls, Nasarawa State</figcaption>
+            </figure>
+        </section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="course-categories">
+                <button class="btn-all">ALL</button>
+                <button class="btn-cse">CSE</button>
+                <button class="btn-wdd">WDD</button>
+            </div>
+            <hr>
+            <div class="courses"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Egwa Jeremiah🌴 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

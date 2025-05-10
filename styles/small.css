@@ -1,0 +1,179 @@
+/* Mobile View ***************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #0b6623;
+    --secondaryColor: #17a2b8;
+    --accentColor: #ffc107;
+    --backgroundColor: #f8f9fa;
+    --textColor: #343a40;
+    --bodyFont: sans-serif;
+    --headingsFont: Roboto;
+}
+
+/* ######### LOGO STYLES ######## */
+.logo{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 2px black
+}
+.logo span{
+    font-size: clamp(2rem, 2vmin, 2rem);
+}
+/* ######### HEADER STYLES ######## */
+header {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #164E70;
+    color: white;
+}
+
+/* ######### NAVIGATION/MENU STYLES ######## */
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#menu {
+    display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation a {
+    display: none;
+	padding: 0.75rem;
+	text-decoration: none;
+    text-align: center;
+    background-color: #000;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1.3rem, 2vmin, 1.3rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: var(--textColor);
+	background-color: var(--accentColor);
+}
+
+.show.navigation a {
+    display: block;
+}
+
+.show.top-nav h1{
+    display: none;
+}
+
+.show.top-nav a{
+    position: absolute;
+    top: 1rem;
+	right: 1rem;
+    
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/* ######### BODY STYLES ######## */
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+/* ######### MAIN STYLES ######## */
+
+main { 
+    display: block;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem; 
+}
+
+/* ######### HERO STYLES ######## */
+.hero img {
+    /* enable responsive behavior for the image */
+    width: 100%;
+    height: auto;
+  }
+
+section {
+    /* text-align: center; */
+    margin-bottom: 2rem;
+}
+
+section ul {
+    margin-left: 2rem;
+}
+
+main section h2{
+    background-color: #164E70;
+    color: white;
+    padding: 1rem;
+}
+
+.location img {
+    width: 250px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.course-categories button {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.courses div {
+    background-color: #E6EDEF;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    color: black;
+    border: 1px solid gray;
+}
+
+/* ######### FOOTER STYLES ######## */
+  footer {
+    background-color: #164E70;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#lastModified {
+    color: gold;
+    margin-top: 1rem;
+    font-weight: 500;
+}
