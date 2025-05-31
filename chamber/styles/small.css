@@ -31,7 +31,7 @@
     box-shadow: 0 0 15px 2px black
 }
 .logo span{
-    font-size: clamp(2rem, 2vmin, 2rem);
+    /* font-size: clamp(2rem, 2vmin, 2rem); */
 }
 /* ######### HEADER STYLES ######## */
 header {
@@ -183,3 +183,8 @@ main section h2{
     margin-top: 1rem;
     font-weight: 500;
 }
+
+.social-media{
+        font-size: 1rem;
+    
+    }
