@@ -1,0 +1,82 @@
+[
+  {
+    "companyName": "Green Thumb Landscaping Services",
+    "name": "John Mwangi",
+    "title": "Senior Landscape Designer",
+    "address": "14 Blossom Drive, GRA, Abuja, Nigeria",
+    "phone": "+234 801 234 XXXX",
+    "membership": "Level 1",
+    "website": "http://www.greenthumb.ng",
+    "icon": "🌿"
+  },
+  {
+    "companyName": "Tech Solutions IT Consulting",
+    "name": "Fatima Aliyu",
+    "title": "Lead IT Consultant",
+    "address": "Suite 305, Innovation Hub, Victoria Island, Lagos, Nigeria",
+    "phone": "+234 902 345 XXXX",
+    "membership": "Level 2",
+    "website": "http://www.techsolutions.com.ng",
+    "icon": "💻"
+  },
+  {
+    "companyName": "Golden Spatula Catering & Events",
+    "name": "Adebola Olaniyan",
+    "title": "Head Chef & Proprietor",
+    "address": "Plot 7, Foodie Boulevard, Lekki, Lagos, Nigeria",
+    "phone": "+234 703 456 XXXX",
+    "membership": "Level 2",
+    "website": "http://www.goldenspatula.ng",
+    "icon": "🍳"
+  },
+  {
+    "companyName": "Apex Realty Property Developers",
+    "name": "Chukwuemeka Okoro",
+    "title": "Managing Director",
+    "address": "21 Liberty Street, Central Business District, Port Harcourt, Nigeria",
+    "phone": "+234 804 567 XXXX",
+    "membership": "Level 1",
+    "website": "http://www.apexrealty.com.ng",
+    "icon": "🏠"
+  },
+  {
+    "companyName": "Ink & Quill Creative Agency",
+    "name": "Zainab Hassan",
+    "title": "Creative Director",
+    "address": "Artisan's Loft, 12 Gallery Road, Ikoyi, Lagos, Nigeria",
+    "phone": "+234 905 678 XXXX",
+    "membership": "Level 3",
+    "website": "http://www.inkandquill.ng",
+    "icon": "✍️"
+  },
+  {
+    "companyName": "Prime Healthcare Medical Centre",
+    "name": "Dr. Ngozi Eze",
+    "title": "Chief Medical Officer",
+    "address": "10 Wellness Avenue, Wuse II, Abuja, Nigeria",
+    "phone": "+234 806 789 XXXX",
+    "membership": "Level 1",
+    "website": "http://www.primehealthcare.ng",
+    "icon": "➕"
+  },
+  {
+    "companyName": "Safeguard Securities Private Security Services",
+    "name": "Benson Idoko",
+    "title": "Operations Manager",
+    "address": "Unit 5, Secure Estate, Sapele Road, Benin City, Nigeria",
+    "phone": "+234 707 890 XXXX",
+    "membership": "Level 3",
+    "website": "http://www.safeguardsecurity.ng",
+    "icon": "🛡️"
+  },
+  {
+    "companyName": "Horizon Logistics Shipping & Freight",
+    "name": "Amaka Obi",
+    "title": "Client Relations Manager",
+    "address": "Dockside Plaza, Port Authority Road, Apapa, Lagos, Nigeria",
+    "phone": "+234 808 901 XXXX",
+    "membership": "Level 1",
+    "website": "http://www.horizonlogistics.ng",
+    "icon": "🚢"
+  }
+]

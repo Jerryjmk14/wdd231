@@ -17,33 +17,102 @@
     <meta property="og:title" content="Home | Chamber of Commerce">
     <meta property="og:description" content=" A central hub for local businesses, offering resources, networking opportunities, and advocacy to foster economic growth within the community.">
     <meta property="og:image" content="https://github.com/Jerryjmk14/wdd231/blob/9a8de86ec831f5ee053157415b9c43fc7a6b6ac7/images/profile.jpg" />
-    <meta property="og:url" content="https://jerryjmk14.github.io/wdd231/">
+    <meta property="og:url" content="https://jerryjmk14.github.io/wdd231/chamber/directory.html#">
    
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/data.js"></script>
     <script src="scripts/date.js" defer></script>
 
 </head>
 <body>
     <header>
         <div class="top-nav">
-            <div class="logo"><img src="images/farin-ruwa-falls.webp" alt="logo">
-                <h1>Nasarawa</h1>
-                <p>Chamber of Commerce</p>
+            <div class="logo">
+                <img src="images/farin-ruwa-falls.webp" alt="logo">
+                <div>
+                    <h1>Nasarawa</h1>
+                    <p>Chamber of Commerce</p>
+                </div> 
             </div>
             <a href="#" id="menu"></a>
         </div>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a> 
+        </nav>
     </header>
 
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="#">Discover</a>
-        <a href="#">Directory</a>
-        <a href="#">Join</a>
-        
-    </nav>
-
+    <section class="hero">
+        <img src="images/hero-nas-chamb-of-commerce.webp" alt="image-of-commerce">
+    </section>
     <main>
-        
+        <div class="home">
+            <h1>Home</h1>
+            <div class="events">
+                <h2 class="home-heading">Events</h2>
+                <div class="events-content">
+                    <h3>Business Networking Mixer</h3>
+                    <p>Date: Saturday, July 20, 2025</p>
+                    <p>Time: 4:00 PM - 7:00 PM</p>
+                    <p>Venue: The Nasarawa Grand Hotel, Conference Hall A</p>
+                
+
+                    <br>
+                
+                    <h3>Workshop: Digital Marketing for SMEs</h3>
+                    <p>Date: Friday, August 9, 2025</p>
+                    <p>Time: 9:30 AM - 1:00 PM</p>
+                    <p>Venue: Chamber of Commerce Training Centre, Lafia</p>
+
+                    <br>
+
+                    <h3>Annual General Meeting (AGM) & Economic Outlook</h3>
+                    <p>Date: Thursday, September 5, 2025</p>
+                    <p>Time: 10:00 AM - 2:00 PM</p>
+                    <p>Venue: Nasarawa State Banquet Hall</p>
+                </div>
+
+            </div>
+            <div class="current-weather">
+                <h2 class="home-heading">Current Weather</h2>
+                <div class="weather-content">
+                    <img src="images/weather_sandstorm_sun_icon.svg" alt="weather icon">
+                    <p><span>Temperature: </span>31°C</p>
+                    <br>
+                    <p><span> Conditions: </span>Partly Cloudy</p>
+                    <br>
+                    <p><span> Wind: </span>5 km/h</p>
+                    <br>
+                    <p><span> Humidity: </span>35%</p>
+                    <br>
+                    <p><span> High: </span>39°C</p>
+                    <br>
+                    <p><span> Low: </span>22°C</p>
+                    <br>
+                </div>
+            </div>
+            <div class="weather-forecast">
+                <h2 class="home-heading">Weather Forecast</h2>
+                <div class="weather-content">
+                    <p><span>Today: </span>31°C</p>
+                    <br>
+                    <p><span> Wednesday: </span>35°C</p>
+                    <br>
+                    <p><span> Thursday: </span>33°C</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-view-menu">
+		    <button id="grid">Grid</button>
+		    <button id="list">List</button>
+	    </div>
+        <div class="cards">
+            
+        </div>   
     </main>
     <footer>
         <div class="contact">
@@ -54,9 +123,9 @@
         </div>
 
         <div class="social-media">
-            <span><img src="images/logo-youtube.svg" alt="logo-youtube"></span>
-            <span><img src="images/logo-twitter.svg" alt="logo-twitter"></span>
-            <span><img src="images/logo-linkedin.svg" alt="logo-linkedin"></span>
+            <div><img src="images/logo-youtube.svg" alt="logo-youtube"></div>
+            <div><img src="images/logo-twitter.svg" alt="logo-twitter"></div>
+            <div><img src="images/logo-linkedin.svg" alt="logo-linkedin"></div>
         </div>
 
         <div class="last-modified">
