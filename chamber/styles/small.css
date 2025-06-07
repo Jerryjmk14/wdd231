@@ -111,8 +111,26 @@ header {
     /* enable responsive behavior for the image */
     width: 100%;
     height: auto;
+    position: relative;
   }
 
+  .btn-join-us{
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    background-color: var(--accentColor);
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    font-size: 1rem;
+   
+  }
+
+  .btn-join-us a{
+    text-decoration: none;
+    color: black;
+  }
 
 /* ######### BODY STYLES ######## */
 body {
@@ -164,6 +182,9 @@ body main .home {
     font-weight: bold;
 }
 
+figcaption{
+    text-transform: capitalize;
+}
 
 
 /* Business Card Container */

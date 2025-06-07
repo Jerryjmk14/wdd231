@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce</title>
-    <meta name="description" content="Chamber of Commerce. A hub to connect members, promote local commerce, and provide valuable information for both established enterprises and aspiring entrepreneurs.">
+    <meta name="description" content="Home Page | Chamber of Commerce.">
     <meta name="author" content="Egwa Jeremiah">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -20,8 +20,9 @@
     <meta property="og:url" content="https://jerryjmk14.github.io/wdd231/chamber/directory.html#">
    
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/data.js"></script>
+    <script src="scripts/data.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
 </head>
 <body>
@@ -47,6 +48,7 @@
 
     <section class="hero">
         <img src="images/hero-nas-chamb-of-commerce.webp" alt="image-of-commerce">
+        <button class="btn-join-us"><a href="#">Join Us!</a></button>
     </section>
     <main>
         <div class="home">
@@ -79,18 +81,19 @@
             <div class="current-weather">
                 <h2 class="home-heading">Current Weather</h2>
                 <div class="weather-content">
-                    <img src="images/weather_sandstorm_sun_icon.svg" alt="weather icon">
-                    <p><span>Temperature: </span>31°C</p>
+                    <h2 id="city"></h2>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
                     <br>
-                    <p><span> Conditions: </span>Partly Cloudy</p>
+                    <p>Temperature: <span id="current-temp"> </span></p>
                     <br>
-                    <p><span> Wind: </span>5 km/h</p>
+                    <p>High: <span id="high"> </span></p>
                     <br>
-                    <p><span> Humidity: </span>35%</p>
+                    <p>Low: <span id="low"> </span></p>
                     <br>
-                    <p><span> High: </span>39°C</p>
-                    <br>
-                    <p><span> Low: </span>22°C</p>
+                    <p> Humidity: <span id="humidity"> </span></p>
                     <br>
                 </div>
             </div>

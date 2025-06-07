@@ -1,0 +1,13 @@
+main{
+    border: 1px solid #5d6f68;
+    background-color: beige;
+    border-radius: 10px;
+    text-align: center; 
+}
+
+#current-temp{
+    font-size: 2rem;
+}
+figcaption{
+    text-transform: capitalize;
+}
