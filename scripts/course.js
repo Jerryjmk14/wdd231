@@ -2,6 +2,8 @@ const coursesContainer = document.querySelector(".courses");
 const buttonAll = document.querySelector(".btn-all");
 const buttonCse = document.querySelector(".btn-cse");
 const buttonWdd = document.querySelector(".btn-wdd");
+const courseDetails = document.querySelector("#course-details");
+const closeModal = document.querySelector("#close-button");
 
 
 const courses = [
@@ -91,10 +93,10 @@ function createCourseCard(courses){
 		let card = document.createElement('div');
 		let subject = document.createElement('h3');
 		let number = document.createElement('p');
+        
 
 		//adding content to elements
 		subject.innerHTML = `${course.subject} <span>${course.number}</span>`;
-		
 		//adding elements to card
 		card.appendChild(subject);
 		
@@ -102,11 +104,19 @@ function createCourseCard(courses){
             card.style.backgroundColor = "green";
             card.style.color = "white";
         }
+// add event listeners to each division on the page 
+        card.addEventListener('click', ()=> displayCourseDetails(course));
+        
+    
 
+        
         //adding card to main grid
 		coursesContainer.appendChild(card);
-		
+
+
 	});
+
+
   }
 
   createCourseCard(courses);
@@ -125,3 +135,28 @@ function createCourseCard(courses){
 	let wddCourses = courses.filter(course => course.subject.toLocaleLowerCase() === "wdd");
 	createCourseCard(wddCourses);
   })
+
+
+  //   Modal
+function displayCourseDetails(data){
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal>❌</buuton>
+    <h2>${data.subject} ${data.number}</h2>
+    <h3>${data.title}</h3>
+    <p><strong>Credits</strong>: ${data.credits}</p>
+    <p><strong>Certificate</strong>: ${data.certificate}</p>
+    <p>${data.description}</p>
+    <p><strong>Technologies</strong>: ${data.technology}</p>`;
+
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", ()=>{
+        courseDetails.close();
+    });
+        
+}
+
+
+    
+		

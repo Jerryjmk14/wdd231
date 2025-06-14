@@ -135,8 +135,87 @@ header {
 /* ######### BODY STYLES ######## */
 body {
     font-family: Roboto, sans-serif;
-    text-align: center;
+    
 }
+
+/* Animations and Transitions */
+p, .level-card{
+  animation-duration: 3s;
+  animation-name: slide-in;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+/* 
+#loader{
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent; 
+  border-color: #999 transparent #999 transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#loader::after{
+  content: '⚙';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: transform(-50%, -50%);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg)}
+}
+@keyframes pulse {
+    0%, 100% {transform: translate(-50%, -50%) scale(1);}
+    50% {transform: translate(-50%, -50%) scale(1.25);}
+} */
+
+
+/* #loader-t{
+  margin: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  border-color: #999 transparent #999 transparent;
+  border-radius: 50%;
+  transition: spin 1.5s linear infinite;
+  box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+  
+}
+
+#loader-t::after{
+  content: '⚙';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 1.5s ease-in-out;
+  font-size: 2rem;
+}
+
+#loader-t:hover {
+    transform: rotate(360deg);
+}
+
+#loader-t:hover::after{
+    transform: translate(-50%, -50%) scale(1.5);
+} */
 
 /* ######### MAIN STYLES ######## */
 
@@ -348,3 +427,114 @@ figcaption{
         justify-content: center;
     
     }
+
+
+    /* ######### FORM ########## */
+
+form {
+    margin: 1rem 2%;
+  
+    label {
+      display: block;
+      font-size: 1rem;
+      color: purple;
+      padding-top: .2rem;
+    }
+    h3 {
+      font-size: 1rem;
+      color: #E07A5F;
+      margin: 1.5rem 0 .2rem 0;
+      border-bottom: 1px solid #eee;
+    }
+  
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+    }
+  
+    input:required {border-left-color: #d70000;}
+    input:focus {border-left-color: black; outline:none;}
+    input:required:valid{border-left-color: green;}
+  
+    input[type=submit] {
+      border: none;
+      text-align: center;
+      background-color: #3D405B;
+      color: white;
+      border-radius: 1rem;
+      padding: .75rem 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+  }
+  input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+  }
+  
+/* ###### JOIN PAGE ####### */
+
+  .levels{
+    text-align: center;
+  }
+
+  .level-card {
+    text-align: center;
+    background-color: #F4F1DE;
+    padding: 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+  }
+
+  .level-card button{
+    margin-top: .5rem;
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+  }
+
+  #results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+  }
+
+
+  /* ####### MODAL ####### */
+*{box-sizing: border-box;}
+
+#closeButton {
+    font-size: 1.5rem;
+    
+}
+#dialogBox {
+    text-align: left;
+    position: absolute;
+    top: 300%;
+    left: 24%;
+    right: 24%;
+    background-color: rgb(235, 214, 187);
+    width: 50%;
+    padding: 1rem 1.5rem;
+}
+
+
+::backdrop {
+    background-color: rgba(122, 117, 118, 0.3);
+}

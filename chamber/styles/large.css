@@ -60,6 +60,15 @@
         text-align: center;
     }
 
+    .membership{
+        display: grid;
+        grid-template-columns: auto 400px;
+    }
+
+    #dialogBox {
+    top: 50%;
+    }
+    
     footer{
         display: flex;
         justify-content: space-between;

@@ -169,6 +169,30 @@ main section h2{
     border: 1px solid gray;
 }
 
+/* ######### Modal ########### */
+dialog {
+    border: 1px solid var(--primaryColor);
+    border-radius: .25rem;
+    padding: 1rem;
+    /* background-color: #fff; */
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    height: 200px;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid var(--textColor);
+}
+
 /* ######### FOOTER STYLES ######## */
   footer {
     background-color: #164E70;

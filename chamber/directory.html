@@ -41,7 +41,7 @@
             <a href="index.html">Home</a>
             <a href="#">Discover</a>
             <a href="directory.html">Directory</a>
-            <a href="#">Join</a> 
+            <a href="join.html">Join</a> 
         </nav>
     </header>
 
@@ -79,18 +79,19 @@
             <div class="current-weather">
                 <h2 class="home-heading">Current Weather</h2>
                 <div class="weather-content">
-                    <img src="images/weather_sandstorm_sun_icon.svg" alt="weather icon">
-                    <p><span>Temperature: </span>31°C</p>
+                    <h2 id="city"></h2>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
                     <br>
-                    <p><span> Conditions: </span>Partly Cloudy</p>
+                    <p>Temperature: <span id="current-temp"> </span></p>
                     <br>
-                    <p><span> Wind: </span>5 km/h</p>
+                    <p>High: <span id="high"> </span></p>
                     <br>
-                    <p><span> Humidity: </span>35%</p>
+                    <p>Low: <span id="low"> </span></p>
                     <br>
-                    <p><span> High: </span>39°C</p>
-                    <br>
-                    <p><span> Low: </span>22°C</p>
+                    <p> Humidity: <span id="humidity"> </span></p>
                     <br>
                 </div>
             </div>
