@@ -433,7 +433,7 @@ figcaption{
 
 form {
     margin: 1rem 2%;
-  
+}
     label {
       display: block;
       font-size: 1rem;
@@ -481,7 +481,7 @@ form {
       -webkit-appearance: none;
       appearance: none;
     }
-  }
+
   input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }
