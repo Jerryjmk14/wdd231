@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #0b6623;
+    --secondaryColor: #17a2b8;
+    --accentColor: #ffc107;
+    --backgroundColor: #f8f9fa;
+    --textColor: #343a40;
+    --bodyFont: sans-serif;
+    --headingsFont: Roboto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+h2 {
+    font-family: var(--headingsFont);
+}
+header, footer {
+    /* background-color: rgb(11, 102, 35); */
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    padding: 1rem;
+
+}
+
+body{
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 740px;
+    margin: 0 auto;
+    font-family: var(--bodyFont);
+    /* background-color: #28a745; */
+}
+
+section {
+    /* margin-bottom: 1rem; */
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 10px 5px var(--textColor);
+}
+.site-name {
+    background-color: var(--primaryColor);
+    color: white;
+    grid-column: span 2;
+    margin-top: 1rem;
+}
+.purpose {
+    background-color: #17a2b8;
+    color: white;
+}
+.scenarios {
+    background-color: var(--accentColor);
+    color: var(--textColor);
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.color-schema {
+    background-color: #17a2b8;
+    color: white;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+
+/*########################*/
+@media screen and (max-width: 42rem) {
+    main {
+        display: block;
+        gap: 2rem;
+        width: 100%;
+        padding: 1rem; 
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+}

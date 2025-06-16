@@ -1,0 +1,276 @@
+/* Mobile View ***************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #0b6623;
+    --secondaryColor: #17a2b8;
+    --accentColor: #ffc107;
+    --backgroundColor: #f8f9fa;
+    --textColor: #343a40;
+    --bodyFont: sans-serif;
+    --headingsFont: Roboto;
+}
+
+/* ######### LOGO STYLES ######## */
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+.logo span{
+    margin-left: 8px;
+    font-size: clamp(1.5rem, 2vmin, 1.5rem);
+}
+/* ######### HEADER STYLES ######## */
+header {
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+/* ######### NAVIGATION/MENU STYLES ######## */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#menu {
+    display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation a {
+    display: none;
+	padding: 0.75rem;
+	text-decoration: none;
+    text-align: center;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1.3rem, 2vmin, 1.3rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: var(--textColor);
+	background-color: var(--accentColor);
+}
+
+.show.navigation a {
+    display: block;
+}
+
+.show.top-nav h1{
+    display: none;
+}
+
+.show.top-nav a{
+    position: absolute;
+    top: 1rem;
+	right: 1rem;
+    
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/* ######### BODY STYLES ######## */
+body {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+}
+
+/* ######### MAIN STYLES ######## */
+
+.main-container { 
+    display: block;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem; 
+}
+
+.inquiry{
+    padding: 2rem;
+    height: 70vh;
+}
+
+/* ######### HERO STYLES ######## */
+.hero img {
+    /* enable responsive behavior for the image */
+    width: 100%;
+    height: auto;
+  }
+.hero{
+    position: relative;
+}
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    color: white;
+}
+
+section {
+    /* margin-bottom: 1rem; */
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 10px 5px var(--textColor);
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+
+section img {
+    width: 100%;
+    height: auto;
+}
+.intro, .clean-energy, .energy-types {
+    background-color: var(--primaryColor);
+    color: white;
+    grid-column: span 2;
+    margin-top: 1rem;
+}
+
+.energy-types {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    text-align: left;
+    padding: 2rem;
+}
+.energy-types h2, .energy-types li, .energy-types img{
+    margin-bottom: 1rem;
+}
+.sutainable-energy {
+    background-color: #17a2b8;
+    color: white;
+}
+.join-us {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.get-in-touch {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.get-in-touch a{
+    text-decoration: none;
+    color: white;
+}
+/*----------- FORM STYLE --------------*/
+form{
+    text-align: left;
+    width: 400px;
+    margin: 1rem 0;
+}
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem 2%;
+}
+.wf1 legend {
+    color: #445ba9;
+    padding: 0 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 textarea,
+.wf1 input[type="number"]
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 300px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-color: var(--primaryColor);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 300px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: 800;
+}
+
+.wf1 input:required {
+    border-bottom: 4px solid red;
+}
+.wf1 input:required:valid {
+    border-bottom: 8px solid green;
+}
+
+
+/* ######### FOOTER STYLES ######## */
+  footer {
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+#lastModified {
+    color: gold;
+    margin-top: 1rem;
+    font-weight: 500;
+}
