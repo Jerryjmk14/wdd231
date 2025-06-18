@@ -1,0 +1,25 @@
+/* Medium View ***************/
+@media screen and (min-width: 38rem) {
+    .dicover-card-box div {
+        grid-template-areas: 
+        "image title"
+        "image description"
+        "image address"
+        "button button"
+        ;
+    }
+
+    .dicover-card-box div img {
+        height: 300px;
+    }
+
+    .dicover-card-box img{
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .dicover-card-box img:hover {
+      transform: scale(1.1);
+    }
+
+}

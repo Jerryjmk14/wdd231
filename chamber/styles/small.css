@@ -79,7 +79,7 @@ header {
 }
 
 .navigation a:hover,
-.navigation a:active {
+.navigation .active {
     color: var(--textColor);
 	background-color: var(--accentColor);
 }
@@ -105,12 +105,15 @@ header {
 #menu.show::before {
     content: "X";
 }
+
  
 /* ######### HERO STYLES ######## */
 .hero img {
     /* enable responsive behavior for the image */
     width: 100%;
     height: auto;
+  }
+  .hero{
     position: relative;
   }
 
@@ -121,7 +124,7 @@ header {
     background-color: var(--accentColor);
     cursor: pointer;
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 20%;
     font-size: 1rem;
    
@@ -539,3 +542,52 @@ form {
 ::backdrop {
     background-color: rgba(122, 117, 118, 0.3);
 }
+
+/*################ Discover Page ############*/
+.dicover-card-box div {
+    margin: 1rem 5px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image"
+    "description"
+    "address"
+    "button"
+    ;
+}
+
+.dicover-card-box h2{
+    margin: 1rem 10px;
+    grid-area: title; 
+}
+
+.dicover-card-box img {
+    width: 100%;
+    grid-area: image;
+}
+
+.dicover-card-box p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.dicover-card-box address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+.dicover-card-box button {
+    margin: 1rem 10px;
+    grid-area: button;
+    background-color: var(--primaryColor);
+    color: var(--backgroundColor);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Farin Ruwa Falls",
+    "address": "Massange village of Farin Ruwa Development Area in Wamba Local Government Area of Nasarawa State, Nigeria",
+    "description": "Farin Ruwa Falls is a waterfall found in the central region of Nigeria. It is among the highest waterfalls in Nigeria. Farin Ruwa Waterfalls is often referred to as the “White Waterfall.”",
+    "image": "images/farin-ruwa.webp"
+  },
+  {
+    "name": "Eggon Hills",
+    "address": "Located near the town of Akwanga Local Government Area of Nasarawa State, Nigeria",
+    "description": "The Eggon Hills are part of a mountain range that offers sweeping views of the surrounding plains, villages, and farmlands. These hills provide a fantastic spot for hiking, picnicking, and sightseeing.",
+    "image": "images/eggon-hills.webp"
+  },
+  {
+    "name": "Maloney Hill",
+    "address": "Keffi Local Government Area of Nasarawa State, Nigeria",
+    "description": "This is a tourist site named after Captain C.W. Maloney, who was the British colonial representative in that area.",
+    "image": "images/maloney-hill.webp"
+  },
+  {
+    "name": "Ara Rock",
+    "address": "Ara Town in Nasarawa Local Government Area of Nasarawa State in central Nigeria.",
+    "description": "Ara Rock is a towering monolith that stands out against the landscape. It achieves a remarkable height of about 120 metres (390 ft) above the surface of the neighbouring plains and it attracts many people to Ara town on sightseeing visits.",
+    "image": "images/ara-rocks.webp"
+  },
+  {
+    "name": "Keana Salt Village",
+    "address": "Keana town in Keana Local Government Area of Nasarawa State, Nigeria",
+    "description": "Keana Salt Village, nestled in a quiet corner of the town, is known for its traditional salt production using local technology.",
+    "image": "images/Keana.webp"
+  },
+  {
+    "name": "Akwanga Forest Reserve",
+    "address": "Located in Akwanga Local Government Area of Nasarawa State, Nigeria",
+    "description": "The area has forest savannahs, which are dry woodlands with fertile alluvial soils.",
+    "image": "images/Akwanga_lake.webp"
+  },
+  {
+    "name": "Doma Dam",
+    "address": "Located in Doma Local Government Area of Nasarawa State, Nigeria",
+    "description": "This large dam is surrounded by beautiful landscapes, offering a perfect setting for fishing, boating, and picnics. The calm waters reflect the sky and surrounding greenery, creating a serene ambience that’s hard to beat.",
+    "image": "images/doma-dam.webp"
+  },
+  {
+    "name": "Akiri Warm Springs",
+    "address": "Located in Awe Local Government Area of Nasarawa State, Nigeria",
+    "description": "Known for its soothing, warm waters, the spring attracts both locals and tourists who believe in its therapeutic benefits. The water temperatures remain warm throughout the year, providing a relaxing and rejuvenating experience for visitors.",
+    "image": "images/akiri-springs.webp"
+  }
+]
