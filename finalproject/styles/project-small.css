@@ -20,11 +20,14 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 .logo img {
-    width: 50px;
+    width: 70px;
     height: auto;
     margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
 }
 .logo span{
     margin-left: 8px;
@@ -103,10 +106,13 @@ body {
 }
 
 /* ######### MAIN STYLES ######## */
+main {
+    width: 100%;
+}
 
 .main-container { 
     display: block;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%;
     padding: 1rem; 
 }
@@ -148,25 +154,41 @@ section img {
     width: 100%;
     height: auto;
 }
-.intro, .clean-energy, .energy-types {
+.intro, .nutrition-image, .myths-facts {
     background-color: var(--primaryColor);
     color: white;
     grid-column: span 2;
     margin-top: 1rem;
 }
 
-.energy-types {
+.myths-facts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     background-color: var(--backgroundColor);
     color: var(--textColor);
     text-align: left;
     padding: 2rem;
+    margin: 0 auto;
+
 }
-.energy-types h2, .energy-types li, .energy-types img{
+
+.myths-facts div{
+    background-color: #F4F1DE;
+    padding: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 6px;
+    color: var(--textColor);
+    text-align: left;
+}
+
+.myths-facts p{
     margin-bottom: 1rem;
 }
-.sutainable-energy {
-    background-color: #17a2b8;
-    color: white;
+.nutrition-tips {
+    /* background-color: #17a2b8; */
+    padding: 2rem;
+    color: black;
 }
 .join-us {
     background-color: var(--backgroundColor);
@@ -259,7 +281,37 @@ form{
     border-bottom: 8px solid green;
 }
 
+#membership-info{
+    height: 70vh;
+    width: 50%;
+    margin: 0 auto;
+}
 
+#openButton {
+background-color: var(--accentColor);
+color: black;
+padding: 1rem;
+border: none;
+font-weight: 700;
+}
+
+#closeButton {
+width: 44px;
+}
+#dialog {
+    background-color: antiquewhite;
+    padding: 2rem;
+    text-align: left;
+}
+
+::backdrop {
+    background-color: rgba(233, 111, 123, 30%);
+}
+
+.navigation .active{
+    background-color: var(--accentColor);
+    color: black;
+}
 /* ######### FOOTER STYLES ######## */
   footer {
     background-color: var(--primaryColor);

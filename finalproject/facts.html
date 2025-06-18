@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts | EatRight Hub</title>
+    <meta name="description" content="A platform to provide information about nutrition, balanced diet and healthy eating habbits for growth and vitality.">
+    <meta name="author" content="Egwa Jeremiah">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/nutritionModal.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="logo"><img src="images/eat-right-logo.webp" alt="logo">
+            <span>EatRight Hub</span></div>
+            <a href="#" id="menu"></a>
+        </div>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="nutrition.html">Nutrition</a>
+            <a href="facts.html" class="active">Facts</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <h1>🧐 Common Misconceptions About Nutrition</h1>
+        
+        <div class="main-container">
+            <section class="intro">
+                <p>In the world of nutrition, it's easy to get lost in misinformation, whether from social media, fad diets, or outdated advice. Many people unknowingly follow habits that may not support their health, simply because the myths sound believable. By separating fact from fiction, we empower ourselves to make smarter, evidence-based food choices. Let’s bust these myths and build a healthier understanding of how to truly nourish our bodies.</p>
+                <br>
+                <button id="openButton">Learn More</button>
+            </section>
+            
+            <div class="myths-facts">
+            </div>
+        </div>
+
+        <!-- Join-Form -->
+         <h2>Welcome to a healthier you.</h2>
+        <h3>One bite at a time.</h3>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Membership Form</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <div>Preferred Contact Method</div>
+                <label><input type="radio" name="contact" value="email">Email</label>
+                <label><input type="radio" name="contact" value="phone">Phone</label>
+                <label>Keep me updated on nutrition tips <input type="checkbox" name="yes" value="yes"></label>
+            </fieldset>
+
+            <input type="submit" value="Join Community">
+        </form>
+
+        <dialog id="dialog">
+            <div></div>
+
+            <button id="closeButton">❌</button>
+        </dialog>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Egwa Jeremiah🌴 Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
