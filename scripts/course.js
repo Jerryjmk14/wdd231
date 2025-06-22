@@ -3,7 +3,7 @@ const buttonAll = document.querySelector(".btn-all");
 const buttonCse = document.querySelector(".btn-cse");
 const buttonWdd = document.querySelector(".btn-wdd");
 const courseDetails = document.querySelector("#course-details");
-const closeModal = document.querySelector("#close-button");
+// const closeModal = document.querySelector("#closeModal");
 
 
 const courses = [
@@ -54,7 +54,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -82,7 +82,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     }
 ]
 
@@ -104,14 +104,13 @@ function createCourseCard(courses){
             card.style.backgroundColor = "green";
             card.style.color = "white";
         }
-// add event listeners to each division on the page 
-        card.addEventListener('click', ()=> displayCourseDetails(course));
-        
-    
-
         
         //adding card to main grid
 		coursesContainer.appendChild(card);
+
+        // add event listeners to each division on the page 
+
+        card.addEventListener('click', ()=> displayCourseDetails(course));
 
 
 	});
@@ -141,22 +140,21 @@ function createCourseCard(courses){
 function displayCourseDetails(data){
     courseDetails.innerHTML = "";
     courseDetails.innerHTML = `
-    <button id="closeModal>❌</buuton>
+    <button id="closeModal">❌</button>
     <h2>${data.subject} ${data.number}</h2>
     <h3>${data.title}</h3>
     <p><strong>Credits</strong>: ${data.credits}</p>
     <p><strong>Certificate</strong>: ${data.certificate}</p>
     <p>${data.description}</p>
-    <p><strong>Technologies</strong>: ${data.technology}</p>`;
-
+    <p><strong>Technologies</strong>: ${data.technology}</p>
+    
+    `;
+    
     courseDetails.showModal();
 
+    // Select the button AFTER it has been added to the DOM
     closeModal.addEventListener("click", ()=>{
         courseDetails.close();
     });
         
 }
-
-
-    
-		

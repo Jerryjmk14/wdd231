@@ -65,13 +65,15 @@ header {
 
 .navigation a {
     display: none;
-	padding: 0.75rem;
+	padding: 0.6rem;
+    margin: 0.5rem;
 	text-decoration: none;
     text-align: center;
 	color: white;
-	font-weight: 700;
+	font-weight: 600;
 	transition: 0.5s;
 	font-size: clamp(1.3rem, 2vmin, 1.3rem);
+    border-radius: 8px;
 }
 
 .navigation a:hover,
@@ -293,6 +295,7 @@ color: black;
 padding: 1rem;
 border: none;
 font-weight: 700;
+border-radius: 8px;
 }
 
 #closeButton {

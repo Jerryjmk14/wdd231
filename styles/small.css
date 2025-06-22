@@ -106,6 +106,10 @@ header {
     content: "X";
 }
  
+.navigation .active{
+    background-color: var(--accentColor);
+    color: black;
+}
 
 /* ######### BODY STYLES ######## */
 body {
@@ -163,12 +167,20 @@ main section h2{
 
 .courses div {
     background-color: #E6EDEF;
-    margin: 1rem 1rem;
+    margin: 0.5rem 1rem;
     padding: 1rem;
     color: black;
     border: 1px solid gray;
 }
 
+.course-work ul{
+    padding: 1rem;
+    text-align: left;
+}
+
+.course-work ul li{
+    margin-top: 0.5rem;
+}
 /* ######### Modal ########### */
 dialog {
     border: 1px solid var(--primaryColor);
@@ -177,8 +189,9 @@ dialog {
     /* background-color: #fff; */
     box-shadow: 0 0 3rem #777;
     width: 90%;
-    height: 200px;
+    height: auto;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 ::backdrop {
@@ -191,6 +204,10 @@ dialog button {
     right: 23px;
     padding: .5rem 1rem;
     border: 1px solid var(--textColor);
+}
+
+#course-details p{
+    margin-top: 1rem;
 }
 
 /* ######### FOOTER STYLES ######## */
