@@ -64,10 +64,6 @@
         display: grid;
         grid-template-columns: auto 400px;
     }
-
-    #dialogBox {
-    top: 50%;
-    }
     
     footer{
         display: flex;
@@ -90,7 +86,6 @@
     }
     .dicover-card-box div img {
         width: 100%;
-        /* height: auto; */
     }
 
     .dicover-card-box img{

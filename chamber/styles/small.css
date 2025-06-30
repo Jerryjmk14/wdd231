@@ -532,12 +532,9 @@ form {
 }
 #dialogBox {
     text-align: left;
-    position: absolute;
-    top: 300%;
-    left: 24%;
-    right: 24%;
     background-color: rgb(235, 214, 187);
-    width: 50%;
+    width: 90%;
+    margin: 0 auto;
     padding: 1rem 1.5rem;
 }
 
